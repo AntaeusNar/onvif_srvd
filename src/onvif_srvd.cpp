@@ -38,7 +38,7 @@ static const char *help_str =
         "Options:                      description:\n\n"
         "       --no_chdir             Don't change the directory to '/'\n"
         "       --no_fork              Don't do fork\n"
-        "       --no_close             Don't close standart IO files\n"
+        "       --no_close             Don't close standard IO files\n"
         "       --pid_file     [value] Set pid file name\n"
         "       --log_file     [value] Set log file name\n\n"
         "       --port         [value] Set socket port for Services   (default = 1000)\n"
@@ -460,7 +460,7 @@ void processing_cmd(int argc, char *argv[])
 void check_service_ctx(void)
 {
     if(service_ctx.eth_ifs.empty())
-        daemon_error_exit("Error: not set no one ehternet interface more details see opt --ifs\n");
+        daemon_error_exit("Error: not set ethernet interface more details see opt --ifs\n");
 
 
     if(service_ctx.scopes.empty())
@@ -468,7 +468,7 @@ void check_service_ctx(void)
 
 
     if(service_ctx.get_profiles().empty())
-        daemon_error_exit("Error: not set no one profile more details see --help\n");
+        daemon_error_exit("Error: not set profile more details see --help\n");
 }
 
 
