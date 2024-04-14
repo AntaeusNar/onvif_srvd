@@ -110,6 +110,7 @@ set(SOAP_SOURCES
     ${GENERATED_DIR}/soapPTZBindingService.cpp
 
     ${GSOAP_CUSTOM_DIR}/duration.c
+    ${GSOAP_CUSTOM_DIR}/struct_timeval.c
 )
 
 if(NOT USE_SYSTEM_GSOAP AND NOT USE_GSOAP_STATIC_LIB)
